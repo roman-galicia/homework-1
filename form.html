@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <div class="visitor-form">
+    <h1>Dear visitor, choose your favorite SEAT model!</h1>
+    <fieldset class="visitor-info">
         <form id="visitor-info" method="POST" action="https://formspree.io/rchornopyskyi@gmail.com">
             <label for="visitor-name">First Name:</label>
             <input id="visitor-name" type="text" placeholder="First Name" name="visitor-name" required>
@@ -28,9 +29,22 @@
                 <input type="radio" name="model" value="arona" required>Arona
             </label>
             <br>
-            <input type="submit">
         </form>
-    </div>
+    </fieldset>
+    <fieldset class="visitor-name">
+        <form id="visitor-age" method="POST" action="https://formspree.io/rchornopyskyi@gmail.com">
+            <h2>Select your age, dude</h2>
+            <select name="your age">
+                <option value="teenager">18-20</option>
+                <option value="student">21-30</option>
+                <option value="adult">30-60</option>
+                <option value="senior">60+</option>
+            </select>
+        </form>
+    </fieldset>
+    <form class="submit-button">
+        <input type="submit">
+    </form>
 </body>
 
 </html>
