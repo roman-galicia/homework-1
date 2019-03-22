@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="visitor-form">
+        <form id="visitor-info" method="POST" action="https://formspree.io/rchornopyskyi@gmail.com">
+            <label for="visitor-name">First Name:</label>
+            <input id="visitor-name" type="text" placeholder="First Name" name="visitor-name" required>
+            <label>
+                Surname: <input type="surname" placeholder="Surname" name="visitor-surname" required>
+            </label>
+            <br>
+            <label>Your favorite SEAT model</label>
+            <label>
+                <input type="radio" name="model"> Ibiza
+            </label>
+            <label>
+                <input type="radio" name="model">Leon
+            </label>
+            <label>
+                <input type="radio" name="model">Arona
+            </label>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
 </body>
+
 </html>
